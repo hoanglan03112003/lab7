@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-
-
-
 <body>
     <style>
         .slider-container {
@@ -17,18 +13,14 @@
             position: relative;
             width: 100%;
         }
-
         .slides {
             display: flex;
             transition: transform 0.5s ease;
         }
-
         .slide {
             flex: 0 0 100%;
-            /* Thiết lập chiều rộng của từng slide */
+        
         }
-
-        /* Để điều chỉnh các nút previous và next */
         .prev,
         .next {
             position: absolute;
@@ -37,11 +29,9 @@
             padding: 10px;
             cursor: pointer;
         }
-
         .prev {
             left: 10px;
         }
-
         .next {
             right: 10px;
         }
@@ -65,14 +55,10 @@
                     alt="">
 
             </div>
-            <!-- Thêm các slide khác nếu cần -->
         </div>
         <button class="prev" onclick="moveSlide(-1)">Previous</button>
         <button class="next" onclick="moveSlide(1)">Next</button>
     </div>
-
-
-    <!-- <script src="js.js"></script> -->
     <script>
         let slideIndex = 0;
 
